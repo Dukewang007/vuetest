@@ -1,0 +1,81 @@
+.model-mask{
+    position: fixed;
+    left: 0;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    height: 100%;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-alert {
+    min-height: 80px;
+    width: 400px;
+    box-sizing: border-box;
+
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 640px) {
+    .modal-alert {
+        width: 100%;
+        margin: 0 20px;
+        padding: 10px;
+    }
+}
+
+.alert-header span {
+
+    font-size: 16px;
+}
+
+.alert-header,
+.alert-content {
+    padding: 5px 10px;
+}
+
+.alert-content {
+    min-height: 45px;
+    padding-bottom: 10px;
+}
+
+.alert-header {
+    text-align: center;
+}
+
+.modal-enter,
+.modal-leave {
+    opacity: 0;
+}
+
+.modal-transition {
+    transition: all .3s ease;
+}
+
+.modal-enter .modal-alert,
+.modal-leave .modal-alert {
+    transform: scale(1.1);
+}
+
+.modal-transition {
+    transition: all .3s ease;
+}
+
+.alert-btns {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+}
+
+.alert-btns button {
+    width: 50%;
+}

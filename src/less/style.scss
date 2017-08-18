@@ -1,0 +1,10 @@
+@import '_mixin.scss'; 
+@import "_model.scss";
+#header{ 
+	width:1000px; 
+	@include center-block; 
+}
+.gallery{ 
+ 	width:600px; 
+ 	@include center-block; 
+}
